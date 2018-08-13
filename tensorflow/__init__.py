@@ -28,6 +28,7 @@ contrib = LazyLoader('contrib', globals(), 'tensorflow.contrib')
 del LazyLoader
 
 from tensorflow.python.platform import flags  # pylint: disable=g-import-not-at-top
+from tensorflow.python.platform import app  # pylint: disable=g-import-not-at-top
 app.flags = flags  # pylint: disable=undefined-variable
 
 del absolute_import
